@@ -36,7 +36,7 @@ module.exports = config({
           repo: 'booknote-blog',
           owner: 'LastKnightCoder',
           admin: ['LastKnightCoder'],
-          id: md5(location.pathname),
+          id: '<% window.location.pathname.substring(0, 50) %>',
           distractionFreeMode: false 
         }
       }
