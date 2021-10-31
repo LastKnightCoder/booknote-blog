@@ -1,4 +1,5 @@
 const { config } = require('vuepress-theme-hope')
+const md5 = require('md5')
 const sidebar = require('./sidebar')
 const nav = require('./nav')
 
@@ -35,6 +36,7 @@ module.exports = config({
           repo: 'booknote-blog',
           owner: 'LastKnightCoder',
           admin: ['LastKnightCoder'],
+          id: md5(location.pathname),
           distractionFreeMode: false 
         }
       }

@@ -19,6 +19,7 @@
     "vuepress-theme-hope": "^1.20.3"
   },
   "dependencies": {
+    "md5": "^2.3.0",
     "vuepress-plugin-comment": "^0.7.3"
   }
 }
