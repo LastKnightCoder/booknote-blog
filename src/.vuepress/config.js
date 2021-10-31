@@ -14,6 +14,7 @@ module.exports = config({
         md.use(require('markdown-it-katex'))
     }
   },
+  base: '/booknote-blog/',
   themeConfig: {
     logo: '/logo.svg',
     sidebar,
