@@ -1,3 +1,5 @@
 
 User-agent:*
 Disallow:
+
+Sitemap: https://lastknightcoder.github.io/booknote-blog/booknote-blog/sitemap.xml
