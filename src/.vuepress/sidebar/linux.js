@@ -11,5 +11,8 @@ module.exports = [{
   }, {
     title: 'ls',
     path: 'ls'
+  }, {
+    title: 'cp',
+    path: 'cp'
   }]
 }]

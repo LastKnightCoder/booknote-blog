@@ -52,10 +52,12 @@ module.exports = config({
         }
       }
     ],
-    ['run', {
-      jsLabs: ['https://unpkg.com/element-ui/lib/index.js'],
-      cssLabs: ['https://unpkg.com/element-ui/lib/theme-chalk/index.css'],
-    }],
+    ['run', 
+      {
+        jsLabs: ['https://unpkg.com/element-ui/lib/index.js'],
+        cssLabs: ['https://unpkg.com/element-ui/lib/theme-chalk/index.css'],
+      }
+    ],
     ['element-ui'],
     ['vuepress-plugin-nprogress'],
     ['vuepress-plugin-viewer']

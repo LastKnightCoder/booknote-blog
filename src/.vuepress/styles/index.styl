@@ -69,7 +69,7 @@ blockquote p
   color: #2d2e36
 blockquote::after
   content: "❞"
-  color: rgba(73, 92, 105, .5)
+  color: rgba(64, 184, 250, .5)
   float: right
 .theme-dark blockquote 
   background: rgba(73, 92, 105, .5)
@@ -131,3 +131,13 @@ iframe
 .theme-dark .markdown-body table th,
 .theme-dark .markdown-body table td
   border-color: rgb(128, 128, 128) !important
+
+// strong
+strong 
+  background: linear-gradient(to right, #00b4db, #0083b0)
+  -webkit-background-clip: text
+  color: transparent
+.theme-dark strong
+  background: linear-gradient(135deg, #CE9FFC 10%, #7367F0 100%)
+  -webkit-background-clip: text
+  color: transparent
