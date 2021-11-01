@@ -1,6 +1,7 @@
 ---
 title: 文件系统
 author: 熊滔
+comment: false
 ---
 
 有关 `Linux` 文件系统以及相关命令的介绍：

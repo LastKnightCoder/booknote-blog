@@ -25,6 +25,7 @@ module.exports = config({
     docsDir: 'src',
     docsBranch: 'master',
     editLinks: true,
+    photoSwipe: false,
     mdEnhance: {
       tex: false,
       lineNumbers: false,
@@ -46,7 +47,7 @@ module.exports = config({
           owner: 'LastKnightCoder',
           admin: ['LastKnightCoder'],
           // github issue 不能超过 50 个字符
-          id: '<%- window.location.pathname.substring(0, 50) %>',
+          id: '<%- frontmatter.commentid %>',
           distractionFreeMode: true // 是否启动阴影遮罩
         }
       }
@@ -55,7 +56,9 @@ module.exports = config({
       jsLabs: ['https://unpkg.com/element-ui/lib/index.js'],
       cssLabs: ['https://unpkg.com/element-ui/lib/theme-chalk/index.css'],
     }],
-    ['element-ui']
+    ['element-ui'],
+    ['vuepress-plugin-nprogress'],
+    ['vuepress-plugin-viewer']
   ],
   head: [
     ['link', {

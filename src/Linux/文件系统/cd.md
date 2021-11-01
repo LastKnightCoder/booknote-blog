@@ -5,6 +5,7 @@ tags:
   - File System
   - cd
 author: 熊滔
+commentid: linux:fs:cd
 ---
 
 改变工作路径

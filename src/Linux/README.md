@@ -1,6 +1,7 @@
 ---
 title: Linux
 author: 熊滔
+comment: false
 ---
 
 - [ ] 文件系统
