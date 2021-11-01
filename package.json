@@ -15,11 +15,13 @@
   "license": "MIT",
   "devDependencies": {
     "markdown-it-katex": "^2.0.3",
-    "vuepress": "^1.5.3",
-    "vuepress-theme-hope": "^1.20.3"
+    "vuepress": "^1.8.0",
+    "vuepress-plugin-element-ui": "^1.1.0",
+    "vuepress-theme-hope": "^1.20.3",
+    "throttle-debounce": "^1.0.1"
   },
   "dependencies": {
-    "md5": "^2.3.0",
-    "vuepress-plugin-comment": "^0.7.3"
+    "vuepress-plugin-comment": "^0.7.3",
+    "vuepress-plugin-run": "^1.0.2"
   }
 }

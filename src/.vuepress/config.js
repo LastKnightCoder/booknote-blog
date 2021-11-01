@@ -1,5 +1,4 @@
 const { config } = require('vuepress-theme-hope')
-const md5 = require('md5')
 const sidebar = require('./sidebar')
 const nav = require('./nav')
 
@@ -20,10 +19,20 @@ module.exports = config({
     logo: '/logo.svg',
     sidebar,
     nav,
+    hostname: 'https://lastknightcoder.github.io/booknote-blog/',
+    feed: false,
+    repo: 'LastKnightCoder/booknote-blog',
+    docsDir: 'src',
+    docsBranch: 'master',
+    editLinks: true,
     mdEnhance: {
       tex: false,
-      lineNumbers: false
-    }
+      lineNumbers: false,
+      tasklist: true
+    },
+  },
+  chainWebpack: config => {
+    config.resolve.alias.set('core-js/library/fn', 'core-js/features')
   },
   plugins: [
     [
@@ -36,11 +45,17 @@ module.exports = config({
           repo: 'booknote-blog',
           owner: 'LastKnightCoder',
           admin: ['LastKnightCoder'],
+          // github issue 不能超过 50 个字符
           id: '<%- window.location.pathname.substring(0, 50) %>',
-          distractionFreeMode: false 
+          distractionFreeMode: true // 是否启动阴影遮罩
         }
       }
-    ]
+    ],
+    ['run', {
+      jsLabs: ['https://unpkg.com/element-ui/lib/index.js'],
+      cssLabs: ['https://unpkg.com/element-ui/lib/theme-chalk/index.css'],
+    }],
+    ['element-ui']
   ],
   head: [
     ['link', {

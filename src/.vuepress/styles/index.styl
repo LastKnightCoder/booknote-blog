@@ -12,88 +12,122 @@
   max-width 450px!important
 
 :root
-    --boxes: #f5f7f9
-    --primary-color: #3884ff
-    --bg-color: white
-    --heading-char-color: #9daab6
-    --boxes-darker2: #bac2c9
-    --font: "Merriweather", '楷体', '楷体-简', '思源宋体' !important
-    --code-font: 'Source Code Pro', "Fira Code", "Consolas", "楷体", '楷体-简', "思源宋体"
+  --boxes: #f5f7f9
+  --primary-color: #3884ff
+  --bg-color: white
+  --heading-char-color: #9daab6
+  --boxes-darker2: #bac2c9
+  --font: "Merriweather", '楷体', '楷体-简', '思源宋体' !important
+  --code-font: 'Source Code Pro', "Fira Code", "Consolas", "楷体", '楷体-简', "思源宋体"
 
 img
-    display: block
-    max-width: 100%
-    margin: 0 auto
-    border-radius: 16px
+  display: block
+  max-width: 100%
+  margin: 0 auto
+  border-radius: 10px
 
 body, button
-    font-family: var(--font)
+  font-family: var(--font)
 
 .page .page-info,
 .page-nav,
 .code-group-nav-tab,
-.page-meta
-    font-family: var(--font) !important
+.page-meta,
+.markdown-body
+  font-family: var(--font) !important
 
 code,
 kbd,
 .line-number
-    font-family: var(--code-font) !important
+  font-family: var(--code-font) !important
 
 ul, ol
-    line-height: 2
-    padding-left: 2.2em
+  line-height: 2
+  padding-left: 2.2em
 
-// blockquote 
-//   width: 100%
-//   background-color: var(--boxes)
-//   border-left: 4px solid var(--primary-color)
-//   border-radius: 0.3rem
-//   padding: 1rem
-//   color: black
-//   padding-bottom: 5px
-
-// blockquote > p 
-//   margin-bottom: 20px
-
-// blockquote > p:nth-last-child(1)
-//   margin-bottom: 10px
-
+// blockquote
 blockquote::before
   content: "❝"
   color: rgba(64, 184, 250, .5)
   font-size: 34px
   line-height: 1
   font-weight: 700
-
 blockquote
   padding: 20px
   text-size-adjust: 100%
   line-height: 1.55em
   font-weight: 400
   border-radius: 6px
-  color: #9e9e9e
+  color: #2d2e36
   font-style: normal
   text-align: left
   box-sizing: inherit
   border-left: none
   border: 1px solid rgba(64, 184, 250, .6)
   background: rgba(64, 184, 250, .2) 
-
 blockquote p
-  color: #9e9e9e
-
+  color: #2d2e36
 blockquote::after
   content: "❞"
-  color: rgba(64, 184, 250, .5)
+  color: rgba(73, 92, 105, .5)
   float: right
+.theme-dark blockquote 
+  background: rgba(73, 92, 105, .5)
+  border: 1px solid rgba(73, 92, 105, .6)
+  color: #e2e1e4
+.theme-dark blockquote::before 
+  color: rgba(73, 92, 105, .5)
+.theme-dark blockquote::after 
+  color: rgba(73, 92, 105, .5)
+.theme-dark blockquote p 
+  color: #e2e1e4
 
 iframe
   border: none
 
+// CodeGroup tab设置
 .code-group-nav-tab
   border-radius: 0 !important
 
+// gitalk
 #vuepress-plugin-comment 
   width: 80%
   margin: 0 auto
+
+.markdown-body .highlight pre, .markdown-body pre
+  background-color: var(--code-bgcolor) !important
+
+// 评论区背景色设置
+.gt-comments
+  margin-top: 10px !important
+  padding: 10px !important
+  border-radius: 5px !important
+  background: #fff !important
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, .1),
+              inset -3px -3px 5px rgba(0, 0, 0, .1) !important
+
+.gt-container .gt-comment-admin .gt-comment-content 
+  background: var(--bg-color) !important
+
+.gt-container .gt-comment-content:hover
+  box-shadow: none !important
+
+// gitalk：暗色模式
+.theme-dark .gt-container .gt-comment-admin .gt-comment-content
+  background: #1e1e1e
+.theme-dark .gt-container .gt-comment-body
+  color: var(--textColor) !important
+.theme-dark .gt-container .gt-comment-admin .gt-comment-content 
+  background: #1e1e1e !important
+.theme-dark .gt-comments
+  background: #1e1e1e !important
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, .5),
+              inset -3px -3px 5px rgba(0, 0, 0, .5) !important
+
+// 暗色表格设置
+.theme-dark .markdown-body table tr
+  background: #1e1e1e !important
+  border-color: rgb(128, 128, 128) !important
+.theme-dark .markdown-body table th,
+.theme-dark .markdown-body table td
+  border-color: rgb(128, 128, 128) !important
