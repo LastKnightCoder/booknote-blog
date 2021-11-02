@@ -9,10 +9,22 @@ module.exports = [{
     title: 'pwd',
     path: 'pwd'
   }, {
+    title: 'touch',
+    path: 'touch'
+  }, {
     title: 'ls',
     path: 'ls'
   }, {
     title: 'cp',
     path: 'cp'
+  }, {
+    title: 'mv',
+    path: 'mv'
+  }, {
+    title: 'rmdir',
+    path: 'rmdir'
+  }, {
+    title: 'rm',
+    path: 'rm'
   }]
 }]
