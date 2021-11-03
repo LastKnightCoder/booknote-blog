@@ -73,7 +73,7 @@ module.exports = config({
     }],
     ['link', {
       rel: "shortcut icon",
-      href: "/booknote/favicon.ico"
+      href: "https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3@master/facicon.68jbit55l8c0.ico"
     }]
   ]
 })
