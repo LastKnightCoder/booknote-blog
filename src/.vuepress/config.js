@@ -70,6 +70,10 @@ module.exports = config({
     ['link', {
         rel: "stylesheet",
         href: "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+    }],
+    ['link', {
+      rel: "shortcut icon",
+      href: "/booknote/favicon.ico"
     }]
   ]
 })
