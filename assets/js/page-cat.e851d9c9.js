@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{754:function(t,e,s){"use strict";s.r(e);var n=s(1),o=Object(n.a)({},(function(){var t=this.$createElement,e=this._self._c||t;return e("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[e("p",[e("code",[this._v("cat")]),this._v(" 命令的作用时来查看文件的内容")])])}),[],!1,null,null,null);e.default=o.exports}}]);
