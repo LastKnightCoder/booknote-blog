@@ -26,5 +26,11 @@ module.exports = [{
   }, {
     title: 'rm',
     path: 'rm'
+  }, {
+    title: 'cat',
+    path: 'cat'
+  }, {
+    title: 'more',
+    path: 'more'
   }]
 }]

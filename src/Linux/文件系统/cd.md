@@ -21,12 +21,14 @@ cd dir
 ::: el-col :span="12"
 ```shell
 # 绝对路径
+# 切换到根目录下的 etc 文件夹中
 cd /etc
 ```
 :::
 ::: el-col :span="12"
 ```shell
-# 相对路径
+# 相对路径，相对于当前路径
+# 切换到当前路径下的 test 文件夹中
 cd test
 ```
 :::

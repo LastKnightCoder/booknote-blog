@@ -8,7 +8,7 @@ commentid: linux:fs:touch
 author: 熊滔
 ---
 
-touch 方法可以新建一个文件
+`touch` 方法可以新建一个文件
 
 ```shell
 touch hello.md
