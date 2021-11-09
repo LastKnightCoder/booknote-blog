@@ -3,6 +3,9 @@ module.exports = [{
   collapsable: false,
   prefix: '文件系统/',
   children: [{
+    title: 'ls',
+    path: 'ls'
+  }, {
     title: 'cd',
     path: 'cd'
   },{
@@ -12,15 +15,12 @@ module.exports = [{
     title: 'touch',
     path: 'touch'
   }, {
-    title: 'ls',
-    path: 'ls'
-  }, {
     title: 'cp',
     path: 'cp'
   }, {
     title: 'mv',
     path: 'mv'
-  },{
+  }, {
     title: 'mkdir',
     path: 'mkdir'
   }, {
