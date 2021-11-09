@@ -33,3 +33,11 @@ cd test
 ```
 :::
 ::::
+
+::: info
+`cd -` 表示回到上次所在的目录，例如我现在在 `/etc` 目录，现在我通过 `cd ~` 来到了家目录，这时我运行 `cd -` 表示回到我上次所在的目录，即会切换到 `/ect` 目录。
+
+<ImageBox src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202111041453012021-11-04-14-53-02.png" :center="false" />
+<br/>
+:::
+

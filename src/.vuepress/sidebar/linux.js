@@ -20,6 +20,9 @@ module.exports = [{
   }, {
     title: 'mv',
     path: 'mv'
+  },{
+    title: 'mkdir',
+    path: 'mkdir'
   }, {
     title: 'rmdir',
     path: 'rmdir'
@@ -32,5 +35,8 @@ module.exports = [{
   }, {
     title: 'more',
     path: 'more'
+  }, {
+    title: 'less',
+    path: 'less'
   }]
 }]
