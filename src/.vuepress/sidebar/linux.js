@@ -3,6 +3,9 @@ module.exports = [{
   collapsable: false,
   prefix: '文件系统/',
   children: [{
+    title: 'Linux系统目录结构',
+    path: 'Linux系统目录结构'
+  }, {
     title: 'ls',
     path: 'ls'
   }, {
