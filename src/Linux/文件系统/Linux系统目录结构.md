@@ -9,7 +9,7 @@ tags:
 commentid: linux:fs:Linux系统目录结构
 ---
 
-<iframe src="https://lastknightcoder.github.io/slides/linux-fs/" width="100%" height="500px" style="background: transparent;" /></iframe>
+<SlideV src="https://lastknightcoder.github.io/slides/linux-fs/" />
 
 如果第一次接触 `Linux` 系统的话，会发现 `Linux` 和 `Windows` 有很多不一样的地方，比如目录结构。`Windows` 可以分为好几个盘符，例如 C 盘，D 盘等等，在 `Linux` 中没有盘符的概念，所有的文件都在一个目录下面，我们称其为根目录，我们先看下根目录下面有哪些东西
 
