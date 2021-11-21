@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img @click="clickImage" ref="img" :src="src" :style="imageStyle" />
+    <img ref="img" :src="src" :style="imageStyle" />
   </div>
 </template>
 

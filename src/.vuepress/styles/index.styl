@@ -24,9 +24,9 @@ img
   display: block
   max-width: 100%
   margin: 0 auto
-  border-radius: 10px
+  // border-radius: 10px
 
-body, button
+body, button, textarea
   font-family: var(--font)
 
 .page .page-info,
@@ -40,6 +40,12 @@ code,
 kbd,
 .line-number
   font-family: var(--code-font) !important
+
+body:is(:not(.theme-dark), .theme-light, .theme-dark) .theme-default-content :is(p, li, table) code
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59) !important
+  -webkit-background-clip: text !important
+  color: transparent
+  font-weight: 1000
 
 ul, ol
   line-height: 2
@@ -71,6 +77,7 @@ blockquote::after
   content: "❞"
   color: rgba(64, 184, 250, .5)
   float: right
+
 .theme-dark blockquote 
   background: rgba(73, 92, 105, .5)
   border: 1px solid rgba(73, 92, 105, .6)
@@ -132,7 +139,7 @@ iframe
 .theme-dark .markdown-body table td
   border-color: rgb(128, 128, 128) !important
 
-// strong
+// strong 渐变色
 strong 
   background: linear-gradient(to right, #00b4db, #0083b0)
   -webkit-background-clip: text

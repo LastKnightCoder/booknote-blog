@@ -1,37 +1,28 @@
 module.exports = [{
-  title: '文件系统',
+  title: '文件相关命令',
   collapsable: false,
-  prefix: '文件系统/',
+  prefix: '文件相关命令/',
   children: [{
     title: 'Linux系统目录结构',
     path: 'Linux系统目录结构'
   }, {
-    title: 'ls',
-    path: 'ls'
+    title: '查看文件夹内容',
+    path: '查看文件夹内容'
   }, {
-    title: 'cd',
-    path: 'cd'
-  },{
-    title: 'pwd',
-    path: 'pwd'
+    title: '路径',
+    path: '路径'
   }, {
-    title: 'touch',
-    path: 'touch'
+    title: '查看目录结构',
+    path: '查看目录结构'
   }, {
-    title: 'cp',
-    path: 'cp'
+    title: '操作文件',
+    path: '操作文件'
   }, {
-    title: 'mv',
-    path: 'mv'
+    title: '操作文件夹',
+    path: '操作文件夹'
   }, {
-    title: 'mkdir',
-    path: 'mkdir'
-  }, {
-    title: 'rmdir',
-    path: 'rmdir'
-  }, {
-    title: 'rm',
-    path: 'rm'
+    title: '查看文件内容',
+    path: '查看文件内容'
   }, {
     title: 'cat',
     path: 'cat'
