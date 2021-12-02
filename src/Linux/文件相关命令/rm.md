@@ -8,19 +8,42 @@ author: 熊滔
 commentid: linux:fs:rm
 ---
 
-`rm` 用来删除文件和文件夹
+`rm` 用来删除文件
 
-```shell
-# 删除多个文件
-rm file1 file2 ...
-# 删除文件夹，删除文件夹时需要添加 -r 选项
-rm -r dir
+```bash {10}
+~ » tree
+.
+├── dst
+│   ├── hello.c
+│   ├── hello.md
+│   └── hello2.md
+└── src
+
+2 directories, 3 files
+# 删除 dst 下的 hello2.md
+~ » rm dst/hello2.md
+~ » tree
+.
+├── dst
+│   ├── hello.c
+│   └── hello.md
+└── src
+
+2 directories, 2 files
 ```
 
 因为 `Linux` 没有回收站，所以删除操作是一个很危险的操作，我们可以为 `rm` 命令添加 `-i` 选项，它会在删除文件之前进行询问
 
-```shell
-rm -i hello.md
+```bash
+~ » rm -i dst/hello.md
+rm: remove regular empty file 'dst/hello.md'? y
+~ » tree
+.
+├── dst
+│   └── hello.c
+└── src
+
+2 directories, 1 file
 ```
 
 ::: warning

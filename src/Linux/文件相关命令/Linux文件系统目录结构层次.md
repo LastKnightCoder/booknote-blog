@@ -1,12 +1,12 @@
 ---
-title: Linux系统目录结构
+title: Linux文件系统目录结构层次
 date: 2021-11-09
 author: 熊滔
 tags:
   - Linux
   - File System
   - Linux系统目录结构
-commentid: linux:fs:Linux系统目录结构
+commentid: linux:fs:Linux文件系统目录结构层次
 ---
 
 <SlideV src="https://lastknightcoder.github.io/slides/linux-fs/" />

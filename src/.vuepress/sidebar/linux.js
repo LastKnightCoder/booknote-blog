@@ -3,8 +3,8 @@ module.exports = [{
   collapsable: false,
   prefix: '文件相关命令/',
   children: [{
-    title: 'Linux系统目录结构',
-    path: 'Linux系统目录结构'
+    title: 'Linux文件系统目录结构层次',
+    path: 'Linux文件系统目录结构层次'
   }, {
     title: '查看文件夹内容',
     path: '查看文件夹内容'
@@ -23,14 +23,5 @@ module.exports = [{
   }, {
     title: '查看文件内容',
     path: '查看文件内容'
-  }, {
-    title: 'cat',
-    path: 'cat'
-  }, {
-    title: 'more',
-    path: 'more'
-  }, {
-    title: 'less',
-    path: 'less'
   }]
 }]
